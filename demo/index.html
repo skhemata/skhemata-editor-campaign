@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from '@skhemata/skhemata-base';
+    import { SkhemataEditorCampaign } from '../dist/index.js';
+
+    customElements.define('skhemata-editor-campaign', SkhemataEditorCampaign)
+    
+    const api = {
+      url: 'https://coral.thrinacia.com/api/service/restv1',
+      base: 'https://coral.thrinacia.com/api'
+    };
+    render(
+      html`
+        <skhemata-editor-campaign .api=${api} campaignId=3>
+        </skhemata-editor-campaign>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
