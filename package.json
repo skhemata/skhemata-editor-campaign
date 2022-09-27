@@ -1,6 +1,6 @@
 {
   "name": "@skhemata/skhemata-editor-campaign",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Skhemata Campaign Editor Web Component. This web component provides bindings for wysiwyg quill editor.",
   "author": "skhemata-editor-campaign",
   "main": "dist/index.js",
